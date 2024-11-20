@@ -1,0 +1,115 @@
+/*Index title & header*/
+
+/*text and positioning of header image and text*/
+.siteHeader {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(housesAbove.jpg);
+        height: 50vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: white;        
+}
+
+.siteHeader p {
+    max-width: 50vh; /*vh is repsonsive to screen size*/
+}
+
+/*##############################*/
+
+/*Index Author Profiles*/
+
+.authorTitle{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+    color: #c2179c;
+}
+
+.authorProfiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: baseline;
+    padding-bottom: 20px;
+    
+}
+
+.author {
+    width:38%;
+    margin: 10px;
+    background-color: #fafafa;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 2px 3px #f0e6ee;
+    
+}
+
+.author:hover {
+    background-color: pink;
+    color: white;
+    box-shadow: 2px 3px #827980;
+}
+
+.author img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.author a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/*##############################*/
+
+/*Index Code First Girls*/
+
+.codeFirstGirls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,pink,peachpuff);
+    color: black;
+    padding:20px;
+    
+}
+
+.codeFirstGirls h3 {
+    width: 30%;
+    font-size: 2rem;
+}
+
+.codeFirstGirls button {
+    height: 60px;
+    width: 200px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 3px #333333;
+}
+
+@media only screen and (max-width: 600px) {
+  .codeFirstGirls h3 {
+    font-size: 1rem;
+  }
+  .codeFirstGirls button {
+      width: 100px;
+}
+
+.codeFirstGirls button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 3px #eeeeee;
+}

@@ -1,0 +1,300 @@
+  
+.navbar {
+    position: relative;
+    padding: 0;
+  }
+  
+  .navbar-image {
+    position: absolute;
+    height: calc(2rem + 16px);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar-brand:hover, .nav-link:hover {
+    background-color: #f0d0ce;
+  }
+  
+  .navbar-brand, .navbar-nav .nav-link {
+    padding: 8px 1rem;
+    line-height: 2rem;
+    transition: all 0.2s;
+  }
+  
+  .navbar-brand.active, .nav-link.active {
+    background-color: #cef0d6;
+  }
+  
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+
+
+@media screen and (max-width: 500px) {
+    .menuBar {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+      font-size:1.5rem;
+    }
+
+}
+
+.aboutMe {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color:rgb(70, 129, 168);
+}
+
+.aboutMe .row {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.profilePic img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #d5e2e4;
+    border-radius: 25%;
+}
+
+.btn-primary {
+    font-size: 1.5rem;
+}
+
+.heading-img {
+  width: 100%;
+  height: 0;
+  background: url('nicolePictures/header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 25px;
+  filter: drop-shadow(6px 6px 6px white);
+  padding-bottom: 20%;
+
+}
+
+.heading-img:hover {
+    transform: scale(1.01);
+}
+
+.heading {
+    padding: 1%;
+    justify-content:  center;
+}
+
+.heading-text {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding-top: 2.5%;
+    text-shadow: 2px 2px 2px rgb(2, 5, 43);
+    line-height: 200%;
+
+}
+
+h1 {
+    font-size: 6vw; 
+    text-shadow: 2px 2px 2px rgb(2, 5, 43);
+    line-height: 110%;
+}
+
+h4 {
+    font-size: 3vw;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+
+
+.bio-section {
+    overflow-wrap: break-word;
+    text-align: center;
+    vertical-align: center;
+    font-size: 13pt;
+    padding: 2%;
+    font-family: 'Shadows Into Light Two', cursive;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px white;
+    margin: 3%;
+    padding: 0.2%;
+}
+
+.boxesleft, .boxesright {
+    box-shadow: 2px 2px 2px white;
+    margin: 2%;
+    padding: 1%;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: lightslategrey;
+
+
+}
+
+.boxesleft:hover, .bio-section:hover, .boxesright:hover{
+    transform: scale(1.01);
+
+}
+
+.sectionTitles {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+
+.aboutMe {
+    opacity: 1;
+    transform: scale(0);
+}
+
+.moveMe {
+    transition: opacity 1.5s, transform 1s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.boxesleft {
+    transform: translate(-100px,0);
+    transition-duration: 10s;
+    opacity: 0;
+}
+
+.boxesright {
+    transform: translate(100px,0);
+    transition-duration: 10s;
+    opacity: 0;
+}
+
+.moveImg {
+    transition: transform 1.2s;
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2%;
+}
+
+.sectionHeader1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+}
+
+
+.content {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 12pt;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.myCarousel
+{
+    text-shadow: 1px 1px rgb(41, 36, 36);
+}
+
+.chill {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+ul li:not(.nav-item) {
+    padding: 5px 0px;
+}
+
+.shake {
+    transition: transform 1.2s;
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.img-shake {
+    transform: translate(100px,0);
+    transition-duration: 10s;
+    opacity: 0;
+}
+
+.windDown {
+    margin: 2%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(161, 209, 221);
+    box-shadow: 1px 2px 3px;
+}
+
+h2 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 13pt;
+    font-weight: bold;
+    
+}
+
+.windDown:hover {
+    background-color: rgb(73, 175, 175);
+}
+
+.left-right{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+.left, .right{
+    flex: 500px;
+}
+
+.chill{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.windDown {
+    flex: 500px;
+}
+
+.right-left{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.left {
+    margin-left: 1%;   
+}
+
+.alignment, .youtube {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.youtube:hover {
+    transform: scale(1.01);
+}
+
+.youtube {
+    margin-top: -5%;
+}
